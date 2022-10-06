@@ -2,6 +2,8 @@ package hu.petrik.StatikusOsztalyok;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -70,4 +72,20 @@ public final class Veletlen {
     public   static String velTeljesNev(boolean nem){
         return velVezetekNev() + " " + velKeresztnev(nem);
     }
+
+    public static String velDatum(int ev1, int ev2) {
+       int ev = rnd.nextInt(ev1 - ev2);
+       int honap = rnd.nextInt(1 - 12);
+       int nap = rnd.nextInt(1- 31);
+        DateFormat forma = new SimpleDateFormat("yyyy:MM:dd");
+       return forma.format(ev + honap + nap);
+    }
+
+    public static String velEmail(String nev){
+        String email;
+        email = String.format("%s-%d @gmail.com", nev.toLowerCase(), velEgesz(1,50));
+        return email;
+    }
+
+
 }
