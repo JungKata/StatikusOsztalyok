@@ -100,4 +100,8 @@ public final class Veletlen {
     public static String velSportAg(){
         return sportAg.get(rnd.nextInt(sportAg.size()));
     }
+
+    public static String velEgyesulet(){
+        return egyesulet.get(rnd.nextInt(egyesulet.size()));
+    }
 }

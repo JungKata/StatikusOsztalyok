@@ -46,5 +46,10 @@ public class Main {
         for (int i = 0; i < 2; i++) {
             System.out.println(Veletlen.velSportAg());
         }
+        System.out.println();
+
+        for (int i = 0; i < 2; i++) {
+            System.out.println(Veletlen.velEgyesulet());
+        }
     }
 }
