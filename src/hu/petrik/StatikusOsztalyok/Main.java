@@ -27,5 +27,24 @@ public class Main {
             System.out.println(Veletlen.velTeljesNev(false));
         }
 
+       /* System.out.println();
+        for (int i = 0; i < 2; i++) {
+            System.out.println(Veletlen.velDatum(1777 , 2022));
+        }*/
+
+        System.out.println();
+        for (int i = 0; i < 2 ; i++) {
+            System.out.println(Veletlen.velEmail("Kecske Gábor"));
+        }
+        System.out.println();
+
+        for (int i = 0; i < 2; i++) {
+            System.out.println(Veletlen.velMobil());
+        }
+        System.out.println();
+
+        for (int i = 0; i < 2; i++) {
+            System.out.println(Veletlen.velSportAg());
+        }
     }
 }
